@@ -1,0 +1,59 @@
+BASE_ORDER
+
+Original
+Converted
+First
+1st
+Second
+2nd
+Input
+Output
+Pre
+Post
+Last
+Before
+After
+Former
+Latter
+Initial
+Final
+
+
+BASE_SPOKEN ("Base" need not be preceded)
+
+
+Binary
+Ternary
+Quarternary
+Quinary
+Senary
+Septenary
+Octal
+Base 9
+Decimal
+Undecimal
+Duodecimal
+Tridecimal
+Tetradecimal
+Pentadecimal
+Hexadecimal
+Base 17
+Base 18
+Base 19
+Vigesimal
+Base 21
+Base 22
+Trivigesimal
+Base 24
+Base 25
+Hexavigesimal
+Heptavigesimal
+Base 28
+Base 29
+Trigesimal
+Base 31
+Duotrigesimal
+Tritrigesimal
+Base 34
+Base 35
+Hexatrigesimal

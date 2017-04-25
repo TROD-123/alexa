@@ -1,0 +1,177 @@
+{
+  "intents": [
+
+    // Welcome. Say a number
+    // In response to: LaunchRequest (no specific intent)
+    //  e.g. "Alexa, convert number."
+    {
+      "intent": "PromptNumber"
+    },
+
+    // User provides ONLY a numerical input. Accepts alphanumerics.
+    {
+      "intent": "NumberInput",
+      "slots": [
+        {
+          "name": "inputNum",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+
+    // User provides ONLY a base (unspecified pre or post). Checks if contained in custom slots defined
+    {
+      "intent": "BaseInput",
+      "slots": [
+        {
+          "name": "baseNum",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        }
+      ]
+    },
+
+    // User provides ONLY preBase
+    {
+      "intent": "PreBaseInput",
+      "slots": [
+        {
+          "name": "preBase",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "PRE_BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        }
+      ]
+    },
+
+    // User provides ONLY postBase
+    {
+      "intent": "PostBaseInput",
+      "slots": [
+        {
+          "name": "postBase",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "POST_BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        }
+      ]
+    },
+
+    // User provides ONLY a base order (pre or post).
+    {
+      "intent": "BaseOrderInput",
+      "slots": [
+        {
+          "name": "BASE_ORDER",
+          "type": "BASE_ORDER"
+        }
+      ]
+    },
+
+    // User provides numerical input AND ONLY post base
+    {
+      "intent": "NumPostBaseInput",
+      "slots": [
+        {
+          "name": "inputNum",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "postBase",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "POST_BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        }
+      ]
+    },
+
+    // User provides numerical input AND ONLY pre base
+    {
+      "intent": "NumPreBaseInput",
+      "slots": [
+        {
+          "name": "inputNum",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "preBase",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "PRE_BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        }
+      ]
+    },
+
+    // User provides both pre AND post base
+    {
+      "intent": "BothBaseInput",
+      "slots": [
+        {
+          "name": "preBase",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "PRE_BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        },
+        {
+          "name": "postBase",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "POST_BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        }
+      ]
+    }
+
+    // User provides ALL items: numerical input, input base, and output base
+    {
+      "intent": "CompleteInput",
+      "slots": [
+        {
+          "name": "inputNum",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "preBase",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "PRE_BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        },
+        {
+          "name": "postBase",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "POST_BASE_SPOKEN",
+          "type": "BASE_SPOKEN"
+        }
+      ]
+    },
+
+    // Built-in intents
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

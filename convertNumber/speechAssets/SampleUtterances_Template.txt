@@ -1,0 +1,75 @@
+Radix Converter
+
+Converts a number from any base numeral system (radix) to another base numeral system.
+
+Ever wanted to convert a number from binary to decimal? The other way around? What about from Trigesimal, or even from Hexatrigesimal, to decimal - for you nerds out there?What if you had the opportunity to use your voice to tell something to convert your number for you, for instance, in situations where you don't have access to a screen, and you want to know conversions quickly?
+
+Now's your chance. Just ask Alexa which number you want to convert, the base it's currently in, and the base you want your number converted to. Let Alexa do all the heavy lifting for you - All without the push of a button (except to wake up good'ol Alexa, of course).
+
+Radix Converter allows you to convert a number from any base numeral system (radix) to another base numeral system. If you're working with numbers in bases other than 10, the skill will spell out the numbers for you. You can also use the Alexa companion app to easily view your results for quick reference in case you need to see your result written out.
+
+Support: 
+-Currently fully supports converting from bases 2-10 (no alpha character parsing yet), but can convert to any base between 2 and 36
+-Only supports the English language
+-Communicates with the Alexa companion app to provide visual of your conversions
+
+Disclaimer:
+-Radix Converter requires no special permissions, and no additional hardware or software. All calculations are done within the skill itself.
+
+
+Current version: 1.0 (April 25, 2017)
+
+
+NumberInput
+(|the) (|number) {inputNum}
+(it's|it is|convert) (|the) (|number) {inputNum}
+(my|the) number (|is) {inputNum}
+(|convert) (|the) (|number) {inputNum}
+
+
+BaseInput
+(|the) base (|is) ({baseNum}|{BASE_SPOKEN})
+(|my) base is ({baseNum}|{BASE_SPOKEN})
+(|convert) from (|base) ({baseNum}|{BASE_SPOKEN})
+
+
+BaseOrderInput
+(|the) (|base is) (|the) {BASE_ORDER} (|base)
+(|the) (|base is) (|the) {BASE_ORDER} (|one)
+(it's|it is|this base is) (|the) {BASE_ORDER} (|base)
+(it's|it is|this base is) (|the) {BASE_ORDER} (|one)
+
+
+NumPostBaseInput
+(|convert) (|number) {inputNum} (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN})
+(|number) {inputNum} converted (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN})
+(|convert) (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN}) (|base) (|the) number {inputNum}
+
+
+NumPreBaseInput
+(|convert) (|number) {inputNum} from (|base) ({preBase}|{PRE_BASE_SPOKEN})
+(|number) {inputNum} converted from (|base) ({preBase}|{PRE_BASE_SPOKEN})
+(|convert) from (|base) ({preBase}|{PRE_BASE_SPOKEN}) (|base) (|the) number {inputNum}
+
+
+BothBaseInput
+(|convert) (|from) (|base) ({preBase}|{PRE_BASE_SPOKEN}) (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN})
+(|convert) a number (|from) (|base) ({preBase}|{PRE_BASE_SPOKEN}) (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN})
+(|base) ({preBase}|{PRE_BASE_SPOKEN}) converted (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN})
+a number in (|base) ({preBase}|{PRE_BASE_SPOKEN}) converted (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN})
+(|convert) (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN}) from (|base) ({preBase}|{PRE_BASE_SPOKEN})
+(|convert) a number (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN}) from (|base) ({preBase}|{PRE_BASE_SPOKEN})
+(|base) ({postBase}|{POST_BASE_SPOKEN}) converted from (|base) ({preBase}|{PRE_BASE_SPOKEN})
+a number in (|base) ({postBase}|{POST_BASE_SPOKEN}) converted from (|base) ({preBase}|{PRE_BASE_SPOKEN})
+
+
+CompleteInput
+(|convert) (|number) {inputNum} from (|base) ({preBase}|{PRE_BASE_SPOKEN}) (to|into) (|base) ({postBase}|{POST_BASE_SPOKEN})
+
+
+
+(i'd like|i would like|i'd want|i would want|i like|i want) to
+convert
+
+
+

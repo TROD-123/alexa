@@ -1,0 +1,3 @@
+LaunchRequest
+CompleteInput preBase=2 PRE_BASE_SPOKEN=binary postBase=16 POST_BASE_SPOKEN=hexadecimal inputNum=2
+BaseOrderInput BASE_ORDER=first

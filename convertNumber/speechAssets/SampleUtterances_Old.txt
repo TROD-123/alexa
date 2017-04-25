@@ -1,0 +1,131 @@
+NumberInput
+
+NumberInput	{inputNum}
+NumberInput it's {inputNum}
+NumberInput it is {inputNum}
+NumberInput the number is {inputNum}
+NumberInput my number is {inputNum}
+
+
+
+BaseInput
+
+BaseInput base {baseNum}
+BaseInput {baseNum} base
+BaseInput {BASE_SPOKEN}
+BaseInput {BASE_SPOKEN} base
+BaseInput convert from base {baseNum}
+BaseInput convert from {baseNum} base
+BaseInput convert from {BASE_SPOKEN}
+BaseInput convert from {BASE_SPOKEN} base
+BaseInput convert to base {baseNum}
+BaseInput convert to {baseNum} base
+BaseInput convert to {BASE_SPOKEN}
+BaseInput convert to {BASE_SPOKEN} base
+
+
+BaseOrderInput
+
+BaseOrderInput {BASE_ORDER}
+BaseOrderInput the {BASE_ORDER} base
+BaseOrderInput {BASE_ORDER} base
+BaseOrderInput the {BASE_ORDER}
+BaseOrderInput the base is {BASE_ORDER}
+BaseOrderInput it is the {BASE_ORDER}
+BaseOrderInput it's the {BASE_ORDER}
+BaseOrderInput it is the {BASE_ORDER} base
+BaseOrderInput it's the {BASE_ORDER} base
+
+
+NumPostBaseInput
+
+NumPostBaseInput convert {inputNum} into base {postBase}
+NumPostBaseInput convert {inputNum} into {postBase}
+NumPostBaseInput convert {inputNum} into {POST_BASE_SPOKEN}
+NumPostBaseInput convert into base {postBase} the number {inputNum}
+NumPostBaseInput convert into {postBase} the number {inputNum}
+NumPostBaseInput convert into {POST_BASE_SPOKEN} the number {inputNum}
+
+
+
+
+NumPreBaseInput
+
+NumPreBaseInput convert {inputNum} from base {preBase}
+NumPreBaseInput convert {inputNum} from {preBase}
+NumPreBaseInput convert base {preBase} {inputNum}
+NumPreBaseInput convert {PRE_BASE_SPOKEN} {inputNum}
+
+
+CompleteInput
+
+CompleteInput convert {inputNum} from base {preBase} to base {postBase}
+CompleteInput convert {inputNum} from {preBase} to {postBase}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} to {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from base {preBase} to {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from {preBase} to {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} to base {postBase}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} to {postBase}
+CompleteInput  {inputNum} from base {preBase} to base {postBase}
+CompleteInput  {inputNum} from {preBase} to {postBase}
+CompleteInput  {inputNum} from {PRE_BASE_SPOKEN} to {POST_BASE_SPOKEN}
+CompleteInput  {inputNum} from base {preBase} to {POST_BASE_SPOKEN}
+CompleteInput  {inputNum} from {preBase} to {POST_BASE_SPOKEN}
+CompleteInput  {inputNum} from {PRE_BASE_SPOKEN} to base {postBase}
+CompleteInput  {inputNum} from {PRE_BASE_SPOKEN} to {postBase}
+CompleteInput Ask Convert Number to convert {inputNum} from base {preBase} to base {postBase}
+CompleteInput Ask Convert Number to convert {inputNum} from {preBase} to {postBase}
+CompleteInput Ask Convert Number to convert {inputNum} from {PRE_BASE_SPOKEN} to {POST_BASE_SPOKEN}
+CompleteInput Ask Convert Number to convert {inputNum} from base {preBase} to {POST_BASE_SPOKEN}
+CompleteInput Ask Convert Number to convert {inputNum} from {preBase} to {POST_BASE_SPOKEN}
+CompleteInput Ask Convert Number to convert {inputNum} from {PRE_BASE_SPOKEN} to base {postBase}
+CompleteInput Ask Convert Number to convert {inputNum} from {PRE_BASE_SPOKEN} to {postBase}
+
+CompleteInput convert {inputNum} from base {preBase} into base {postBase}
+CompleteInput convert {inputNum} from {preBase} into {postBase}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} into {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from base {preBase} into {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from {preBase} into {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} into base {postBase}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} into {postBase}
+CompleteInput  {inputNum} from base {preBase} into base {postBase}
+CompleteInput  {inputNum} from {preBase} into {postBase}
+CompleteInput  {inputNum} from {PRE_BASE_SPOKEN} into {POST_BASE_SPOKEN}
+CompleteInput  {inputNum} from base {preBase} into {POST_BASE_SPOKEN}
+CompleteInput  {inputNum} from {preBase} into {POST_BASE_SPOKEN}
+CompleteInput  {inputNum} from {PRE_BASE_SPOKEN} into base {postBase}
+CompleteInput  {inputNum} from {PRE_BASE_SPOKEN} into {postBase}
+CompleteInput Ask Convert Number to convert {inputNum} from base {preBase} into base {postBase}
+CompleteInput Ask Convert Number to convert {inputNum} from {preBase} into {postBase}
+CompleteInput Ask Convert Number to convert {inputNum} from {PRE_BASE_SPOKEN} into {POST_BASE_SPOKEN}
+CompleteInput Ask Convert Number to convert {inputNum} from base {preBase} into {POST_BASE_SPOKEN}
+CompleteInput Ask Convert Number to convert {inputNum} from {preBase} into {POST_BASE_SPOKEN}
+CompleteInput Ask Convert Number to convert {inputNum} from {PRE_BASE_SPOKEN} into base {postBase}
+CompleteInput Ask Convert Number to convert {inputNum} from {PRE_BASE_SPOKEN} into {postBase}
+
+
+
+convert a number from binary to decimal
+convert a number from binary into decimal
+
+
+
+
+
+
+
+MyIntent say hello to me
+MyIntent please say hi to me
+MyIntent say hi to me
+MyIntent hi alexa
+MyIntent hello there
+MyIntent hello
+MyIntent hi
+fixedApiIntent go to default state
+flexibleApiIntent go to {myState}
+WhatsUpIntent what is up
+WhatsUpIntent sup
+WhatsUpIntent yo
+MyNameIsIntent my name is {firstName}
+
+

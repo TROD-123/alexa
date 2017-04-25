@@ -1,0 +1,212 @@
+NumberInput	{inputNum}
+NumberInput convert {inputNum}
+
+
+BaseInput base {baseNum}
+BaseInput {BASE_SPOKEN}
+BaseInput {BASE_SPOKEN} system
+BaseInput the {BASE_SPOKEN} system
+
+
+PreBaseInput convert from base {preBase}
+PreBaseInput convert from {PRE_BASE_SPOKEN}
+PreBaseInput convert from {PRE_BASE_SPOKEN} system
+PreBaseInput convert from the {PRE_BASE_SPOKEN} system
+
+
+PostBaseInput convert to base {postBase}
+PostBaseInput convert to {POST_BASE_SPOKEN}
+PostBaseInput convert to {POST_BASE_SPOKEN} system
+PostBaseInput convert to the {POST_BASE_SPOKEN} system
+
+
+PostBaseInput convert into base {postBase}
+PostBaseInput convert into {POST_BASE_SPOKEN}
+PostBaseInput convert into {POST_BASE_SPOKEN} system
+PostBaseInput convert into the {POST_BASE_SPOKEN} system
+
+
+NumPreBaseInput convert {inputNum} from base {preBase}
+NumPreBaseInput convert {inputNum} from {PRE_BASE_SPOKEN}
+NumPreBaseInput convert {inputNum} from {PRE_BASE_SPOKEN} system
+NumPreBaseInput convert {inputNum} from the {PRE_BASE_SPOKEN} system
+
+NumPostBaseInput convert {inputNum} to base {postBase}
+NumPostBaseInput convert {inputNum} to {POST_BASE_SPOKEN}
+NumPostBaseInput convert {inputNum} to {POST_BASE_SPOKEN} system
+NumPostBaseInput convert {inputNum} to the {POST_BASE_SPOKEN} system
+
+NumPostBaseInput convert {inputNum} into base {postBase}
+NumPostBaseInput convert {inputNum} into {POST_BASE_SPOKEN}
+NumPostBaseInput convert {inputNum} into {POST_BASE_SPOKEN} system
+NumPostBaseInput convert {inputNum} into the {POST_BASE_SPOKEN} system
+
+
+BothBaseInput convert from base {preBase} to {postBase}
+BothBaseInput convert from base {preBase} to {POST_BASE_SPOKEN}
+BothBaseInput convert from base {preBase} to {POST_BASE_SPOKEN} system
+BothBaseInput convert from base {preBase} to the {POST_BASE_SPOKEN} system
+
+BothBaseInput convert from base {preBase} into {postBase}
+BothBaseInput convert from base {preBase} into {POST_BASE_SPOKEN}
+BothBaseInput convert from base {preBase} into {POST_BASE_SPOKEN} system
+BothBaseInput convert from base {preBase} into the {POST_BASE_SPOKEN} system
+
+BothBaseInput convert from {PRE_BASE_SPOKEN} to {postBase}
+BothBaseInput convert from {PRE_BASE_SPOKEN} to {POST_BASE_SPOKEN}
+BothBaseInput convert from {PRE_BASE_SPOKEN} to {POST_BASE_SPOKEN} system
+BothBaseInput convert from {PRE_BASE_SPOKEN} to the {POST_BASE_SPOKEN} system
+
+BothBaseInput convert from {PRE_BASE_SPOKEN} into {postBase}
+BothBaseInput convert from {PRE_BASE_SPOKEN} into {POST_BASE_SPOKEN}
+BothBaseInput convert from {PRE_BASE_SPOKEN} into {POST_BASE_SPOKEN} system
+BothBaseInput convert from {PRE_BASE_SPOKEN} into the {POST_BASE_SPOKEN} system
+
+BothBaseInput convert from {PRE_BASE_SPOKEN} system to {postBase}
+BothBaseInput convert from {PRE_BASE_SPOKEN} system to {POST_BASE_SPOKEN}
+BothBaseInput convert from {PRE_BASE_SPOKEN} system to {POST_BASE_SPOKEN} system
+BothBaseInput convert from {PRE_BASE_SPOKEN} system to the {POST_BASE_SPOKEN} system
+
+BothBaseInput convert from {PRE_BASE_SPOKEN} system into {postBase}
+BothBaseInput convert from {PRE_BASE_SPOKEN} system into {POST_BASE_SPOKEN}
+BothBaseInput convert from {PRE_BASE_SPOKEN} system into {POST_BASE_SPOKEN} system
+BothBaseInput convert from {PRE_BASE_SPOKEN} system into the {POST_BASE_SPOKEN} system
+
+BothBaseInput convert from the {PRE_BASE_SPOKEN} system to {postBase}
+BothBaseInput convert from the {PRE_BASE_SPOKEN} system to {POST_BASE_SPOKEN}
+BothBaseInput convert from the {PRE_BASE_SPOKEN} system to {POST_BASE_SPOKEN} system
+BothBaseInput convert from the {PRE_BASE_SPOKEN} system to the {POST_BASE_SPOKEN} system
+
+BothBaseInput convert from the {PRE_BASE_SPOKEN} system into {postBase}
+BothBaseInput convert from the {PRE_BASE_SPOKEN} system into {POST_BASE_SPOKEN}
+BothBaseInput convert from the {PRE_BASE_SPOKEN} system into {POST_BASE_SPOKEN} system
+BothBaseInput convert from the {PRE_BASE_SPOKEN} system into the {POST_BASE_SPOKEN} system
+
+BothBaseInput convert to {postBase} from base {preBase}
+BothBaseInput convert to {postBase} from {PRE_BASE_SPOKEN}
+BothBaseInput convert to {postBase} from {PRE_BASE_SPOKEN} system
+BothBaseInput convert to {postBase} from the {PRE_BASE_SPOKEN} system
+
+BothBaseInput convert to {POST_BASE_SPOKEN} from base {preBase}
+BothBaseInput convert to {POST_BASE_SPOKEN} from {PRE_BASE_SPOKEN}
+BothBaseInput convert to {POST_BASE_SPOKEN} from {PRE_BASE_SPOKEN} system
+BothBaseInput convert to {POST_BASE_SPOKEN} from the {PRE_BASE_SPOKEN} system
+
+BothBaseInput convert to {POST_BASE_SPOKEN} system from base {preBase}
+BothBaseInput convert to {POST_BASE_SPOKEN} system from {PRE_BASE_SPOKEN}
+BothBaseInput convert to {POST_BASE_SPOKEN} system from {PRE_BASE_SPOKEN} system
+BothBaseInput convert to {POST_BASE_SPOKEN} system from the {PRE_BASE_SPOKEN} system
+
+BothBaseInput convert to the {POST_BASE_SPOKEN} system from base {preBase}
+BothBaseInput convert to the {POST_BASE_SPOKEN} system from {PRE_BASE_SPOKEN}
+BothBaseInput convert to the {POST_BASE_SPOKEN} system from {PRE_BASE_SPOKEN} system
+BothBaseInput convert to the {POST_BASE_SPOKEN} system from the {PRE_BASE_SPOKEN} system
+
+BothBaseInput convert into {postBase} from base {preBase}
+BothBaseInput convert into {postBase} from {PRE_BASE_SPOKEN}
+BothBaseInput convert into {postBase} from {PRE_BASE_SPOKEN} system
+BothBaseInput convert into {postBase} from the {PRE_BASE_SPOKEN} system
+
+BothBaseInput convert into {POST_BASE_SPOKEN} from base {preBase}
+BothBaseInput convert into {POST_BASE_SPOKEN} from {PRE_BASE_SPOKEN}
+BothBaseInput convert into {POST_BASE_SPOKEN} from {PRE_BASE_SPOKEN} system
+BothBaseInput convert into {POST_BASE_SPOKEN} from the {PRE_BASE_SPOKEN} system
+
+BothBaseInput convert into {POST_BASE_SPOKEN} system from base {preBase}
+BothBaseInput convert into {POST_BASE_SPOKEN} system from {PRE_BASE_SPOKEN}
+BothBaseInput convert into {POST_BASE_SPOKEN} system from {PRE_BASE_SPOKEN} system
+BothBaseInput convert into {POST_BASE_SPOKEN} system from the {PRE_BASE_SPOKEN} system
+
+BothBaseInput convert into the {POST_BASE_SPOKEN} system from base {preBase}
+BothBaseInput convert into the {POST_BASE_SPOKEN} system from {PRE_BASE_SPOKEN}
+BothBaseInput convert into the {POST_BASE_SPOKEN} system from {PRE_BASE_SPOKEN} system
+BothBaseInput convert into the {POST_BASE_SPOKEN} system from the {PRE_BASE_SPOKEN} system
+
+
+BaseOrderInput {BASE_ORDER}
+BaseOrderInput the {BASE_ORDER}
+BaseOrderInput the {BASE_ORDER} number
+BaseOrderInput the {BASE_ORDER} one
+
+
+CompleteInput convert {inputNum} from base {preBase} to base {postBase}
+CompleteInput convert {inputNum} from base {preBase} to {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from base {preBase} to {POST_BASE_SPOKEN} system
+CompleteInput convert {inputNum} from base {preBase} to the {POST_BASE_SPOKEN} system
+
+CompleteInput convert {inputNum} from base {preBase} into base {postBase}
+CompleteInput convert {inputNum} from base {preBase} into {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from base {preBase} into {POST_BASE_SPOKEN} system
+CompleteInput convert {inputNum} from base {preBase} into the {POST_BASE_SPOKEN} system
+
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} to base {postBase}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} to {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} to {POST_BASE_SPOKEN} system
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} to the {POST_BASE_SPOKEN} system
+
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} into base {postBase}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} into {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} into {POST_BASE_SPOKEN} system
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} into the {POST_BASE_SPOKEN} system
+
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} system to base {postBase}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} system to {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} system to {POST_BASE_SPOKEN} system
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} system to the {POST_BASE_SPOKEN} system
+
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} system into base {postBase}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} system into {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} system into {POST_BASE_SPOKEN} system
+CompleteInput convert {inputNum} from {PRE_BASE_SPOKEN} system into the {POST_BASE_SPOKEN} system
+
+CompleteInput convert {inputNum} from the {PRE_BASE_SPOKEN} system to base {postBase}
+CompleteInput convert {inputNum} from the {PRE_BASE_SPOKEN} system to {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from the {PRE_BASE_SPOKEN} system to {POST_BASE_SPOKEN} system
+CompleteInput convert {inputNum} from the {PRE_BASE_SPOKEN} system to the {POST_BASE_SPOKEN} system
+
+CompleteInput convert {inputNum} from the {PRE_BASE_SPOKEN} system into base {postBase}
+CompleteInput convert {inputNum} from the {PRE_BASE_SPOKEN} system into {POST_BASE_SPOKEN}
+CompleteInput convert {inputNum} from the {PRE_BASE_SPOKEN} system into {POST_BASE_SPOKEN} system
+CompleteInput convert {inputNum} from the {PRE_BASE_SPOKEN} system into the {POST_BASE_SPOKEN} system
+
+
+
+CompleteInput what is {inputNum} in base {preBase} converted to base {postBase}
+CompleteInput what is {inputNum} in base {preBase} converted to {POST_BASE_SPOKEN}
+CompleteInput what is {inputNum} in base {preBase} converted to {POST_BASE_SPOKEN} system
+CompleteInput what is {inputNum} in base {preBase} converted to the {POST_BASE_SPOKEN} system
+
+CompleteInput what is {inputNum} in base {preBase} converted into base {postBase}
+CompleteInput what is {inputNum} in base {preBase} converted into {POST_BASE_SPOKEN}
+CompleteInput what is {inputNum} in base {preBase} converted into {POST_BASE_SPOKEN} system
+CompleteInput what is {inputNum} in base {preBase} converted into the {POST_BASE_SPOKEN} system
+
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} converted to base {postBase}
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} converted to {POST_BASE_SPOKEN}
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} converted to {POST_BASE_SPOKEN} system
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} converted to the {POST_BASE_SPOKEN} system
+
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} converted into base {postBase}
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} converted into {POST_BASE_SPOKEN}
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} converted into {POST_BASE_SPOKEN} system
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} converted into the {POST_BASE_SPOKEN} system
+
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} system converted to base {postBase}
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} system converted to {POST_BASE_SPOKEN}
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} system converted to {POST_BASE_SPOKEN} system
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} system converted to the {POST_BASE_SPOKEN} system
+
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} system converted into base {postBase}
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} system converted into {POST_BASE_SPOKEN}
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} system converted into {POST_BASE_SPOKEN} system
+CompleteInput what is {inputNum} in {PRE_BASE_SPOKEN} system converted into the {POST_BASE_SPOKEN} system
+
+CompleteInput what is {inputNum} in the {PRE_BASE_SPOKEN} system converted to base {postBase}
+CompleteInput what is {inputNum} in the {PRE_BASE_SPOKEN} system converted to {POST_BASE_SPOKEN}
+CompleteInput what is {inputNum} in the {PRE_BASE_SPOKEN} system converted to {POST_BASE_SPOKEN} system
+CompleteInput what is {inputNum} in the {PRE_BASE_SPOKEN} system converted to the {POST_BASE_SPOKEN} system
+
+CompleteInput what is {inputNum} in the {PRE_BASE_SPOKEN} system converted into base {postBase}
+CompleteInput what is {inputNum} in the {PRE_BASE_SPOKEN} system converted into {POST_BASE_SPOKEN}
+CompleteInput what is {inputNum} in the {PRE_BASE_SPOKEN} system converted into {POST_BASE_SPOKEN} system
+CompleteInput what is {inputNum} in the {PRE_BASE_SPOKEN} system converted into the {POST_BASE_SPOKEN} system

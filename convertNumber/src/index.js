@@ -13,7 +13,7 @@ exports.handler = function(event, context, callback) {
 
     // alexa.dynamoDBTableName = 'YourTableName'; // creates new table for userid:session.attributes
 
-    alexa.appId = APP_ID;
+    //alexa.appId = APP_ID;
     alexa.registerHandlers(handlers);
     alexa.execute();
 };
@@ -224,9 +224,7 @@ const APOLOGY_CONSTANTS = {
         "I am sorry. ",
         "I'm sorry. ",
         "My bad. ",
-        "Oops. ",
         "Apologies. ",
-        "Whoops. ",
         "Hmmm. "
     ],
     LATTER: [
@@ -548,24 +546,17 @@ const processBaseOrderInput = function(baseOrder) {
 //
 const staticVoicebackStrings = {
     // general interface
-    PROMPT_WELCOME: 'Welcome to ' + SKILL_NAME  + ', Version <say-as interpret-as=\"characters\">' + VERSION_NUMBER + '</say-as>! ' + 
-                    'This skill allows you to convert any positive, whole number from one base number system to another. ' + 
-                    'Start by saying a number you want to convert, and I will guide you with the rest. ' +
-                    'Say, help, if you need any help anytime. ' +
+    PROMPT_WELCOME: 'Welcome to ' + SKILL_NAME  + '! ' +  
+                    'Start by saying a number you want to convert. I will guide you with the rest. ' +
+                    'If you need help at any moment, just say, help. ' +
                     'So, what number do you want to convert?',
-    REPROMPT_WELCOME:   generateApology(true) + 'Please say the number you want to convert. ' +
-                        'Your number can be a positive, whole number from any numerical system such as binary, decimal, or hexadecimal. ' +
-                        'I can convert any positive, whole number to and from any base between 2 and 36. ' +
-                        'What\'s the number you want me to convert?',
-    
+
     PROMPT_NUMBER:  'Please provide a number you want to convert. ' + 
                     'For example, you can say, five. ' +
-                    'What number do you want me to convert for you?',
+                    'What number do you want me to convert?',
     
     REPROMPT_NUMBER:    generateApology(true) + 'Please say the number you want to convert. ' +
-                        'Your number can be a positive, whole number from any numerical system such as binary, decimal, or hexadecimal. ' +
-                        'I can convert any positive, whole number to and from any base between 2 and 36. ' +
-                        'But right now I can only accept starting numbers from bases 2 to 10. You can still convert into bases as large as 36, though. ' +
+                        'It must be a positive whole number. It can be in any base from 2 to 36. ' +
                         'What\'s the number you want me to convert?',
 
     PROMPT_BASE:    'Please say a base. For example, you can say, base 2. You can even say, binary. ' + 
@@ -575,19 +566,16 @@ const staticVoicebackStrings = {
 
     
     // help, cancel, stop
-    HELP_MESSAGE:   SKILL_NAME + ', Version <say-as interpret-as=\"characters\">' + VERSION_NUMBER + '</say-as>, let\'s you convert any positive, whole number from one base number system to another. ' +
-                    'Start by saying a positive whole number you want to convert, and I will guide you with the rest. ' +
-                    'For example, you can say, 50. Or instead, you can give me a complete request like, Convert 50 from decimal into binary. ' +
+    HELP_MESSAGE:   'Start by saying a positive whole number you want to convert, and I will guide you with the rest. ' +
+                    'For example, you can say, 50. ' + 
+                    'You can also give me a complete request like, Convert 50 from decimal into binary, and I\'ll give you your answer right away. ' +
                     'I can work with any base between 2 and 36. ' + 
-                    'But right now I can only accept starting numbers from bases 2 to 10. I can still convert into bases as large as 36, though. ' +
-                    'When saying bases, if you\'re saying a number, please say, base, followed by the number. ' +
-                    'Say, help, if you need a refresher on what ' + SKILL_NAME + ' can do. ' +
-                    'Say, cancel, to start over. ' +
-                    'Say, stop, if you had enough of me. ' +
-                    'Also, feel free to interrupt me anytime by pressing the talk button and saying your response. I tend to yap on. ' +
+                    'But right now I can only accept starting numbers from bases 2 to 10. I can still convert into bases as large as 36 though. ' +
+                    'If you want to start over, say cancel. ' +
+                    'Say stop, if you had enough of me. ' +
                     'So what number do you want to convert?',
     CANCEL_MESSAGE: 'Let\'s start over from the beginning. What number do you want to convert?',
-    STOP_MESSAGE: 'Thanks for using ' + SKILL_NAME + '! We hope to serve you again next time.'
+    STOP_MESSAGE: 'Thanks for using ' + SKILL_NAME + '! Good bye.'
 
 };
 
@@ -598,10 +586,10 @@ const generatePromptInputNumberVoicebackString = function(preBase, postBase) {
         return 'What number do you want me to convert for you?';
     }
     if (preBase && postBase) {
-        return 'Which number in the ' + BASE_SPOKEN[preBase] + ' system do you want me to convert into the ' + BASE_SPOKEN[postBase] + ' system?';
+        return 'Which number in the ' + BASE_SPOKEN[preBase] + ' system, do you want me to convert into the ' + BASE_SPOKEN[postBase] + ' system?';
     }
     if (preBase) {
-        return 'Which number in the ' + BASE_SPOKEN[preBase] + ' system do you want me to convert?';
+        return 'Which number in the ' + BASE_SPOKEN[preBase] + ' system, do you want me to convert?';
     }
     if (postBase) {
         return 'Which number do you want me to convert into the ' + BASE_SPOKEN[postBase] + ' system?';
@@ -609,43 +597,30 @@ const generatePromptInputNumberVoicebackString = function(preBase, postBase) {
 }
 
 const generateRepromptInputNumberVoicebackString = function(preBase, postBase) {
-    if (!preBase && !postBase) {
-        return generateApology(true) + 'Which number do you want me to convert for you?';
-    }
-    if (preBase && postBase) {
-        return generateApology(true) + 'What number in the ' + BASE_SPOKEN[preBase] + ' system do you want me to convert into the ' + BASE_SPOKEN[postBase] + ' system?';
-    }
-    if (preBase) {
-        return generateApology(true) + 'Which number in the ' + BASE_SPOKEN[preBase] + ' system do you want me to convert?';
-    }
-    if (postBase) {
-        return generateApology(true) + 'Which number do you want me to convert into the ' + BASE_SPOKEN[postBase] + ' system?';
-    }
+    return generateApology(true) + generatePromptInputNumberVoicebackString(preBase, postBase);
 }
 
 const generatePromptPreBaseVoicebackString = function(handler) {
-    return 'In which number system is the number ' + handler.attributes['inputNum'] + '. You can say something like, base 2, \
+    return 'In which base is the number ' + handler.attributes['inputNum'] + '. You can say something like, base 2, \
         or you can even say, binary.';
 };
 
 const generateRepromptPreBaseVoicebackString = function(handler) {
-    return generateApology(true) + 'Please say the numerical system ' + handler.attributes['inputNum'] + ' is in.\
-        You can say something like, base 2, or you can even say, binary. I can convert any whole numbers to and \
-        from any base between 2 and 36.';
+    return generateApology(true) + 'What base is the the number, ' + handler.attributes['inputNum'] + ', in?';
 };
 
 const generatePromptPostBaseVoicebackString = function(handler) {
     var inputNum = handler.attributes['inputNum'];
     var preBase = handler.attributes['preBase'];
     inputNum = spellOut(preBase, inputNum);
-    return 'To which number system do you want to convert the number, ' + BASE_SPOKEN[preBase] + ', ' + inputNum + '.';
+    return 'To which base do you want to convert the number, ' + BASE_SPOKEN[preBase] + ', ' + inputNum + '.';
 };
 
 const generateRepromptPostBaseVoicebackString = function(handler) {
     var inputNum = handler.attributes['inputNum'];
     var preBase = handler.attributes['preBase'];
     inputNum = spellOut(preBase, inputNum);
-    return generateApology(true) + 'Please say the numerical system you want to \
+    return generateApology(true) + 'Please say the base you want to \
         convert ' + BASE_SPOKEN[preBase] + ', ' + inputNum + ' to.\
         You can say something like, base 2, or you can even say, binary. I can convert your number \
         to any base between 2 and 36.'
@@ -701,7 +676,7 @@ const generateErrorVoicebackString = function(num, baseInput, inputBaseOrder, er
         baseAmend_baseInput = ' do you want to work with? Say, base, followed by the number.';
         baseString = '';
     } else if (preBase && postBase) {
-        baseAmend = ' from the ' + BASE_SPOKEN[preBase] + ' system to the ' + BASE_SPOKEN[postBase] + ' system?';
+        baseAmend = ' from the ' + BASE_SPOKEN[preBase] + ' system, to the ' + BASE_SPOKEN[postBase] + ' system?';
         baseAmend_baseInput += baseAmend;
     } else if (preBase) {
         baseAmend = ' from the ' + BASE_SPOKEN[preBase] + ' system?';
@@ -728,7 +703,7 @@ const generateErrorVoicebackString = function(num, baseInput, inputBaseOrder, er
                 generateRepromptInputNumberVoicebackString(preBase, postBase)];
         }
         case ERROR_CODE.INPUT_INVALID: {
-            return [generateApology(false) + num + ', is not a valid number in the ' + BASE_SPOKEN[baseInput] + ' system. Which number system is the number, ' + num + ' in that you want converted' + baseAmend, 
+            return [generateApology(false) + num + ', is not a valid number in the ' + BASE_SPOKEN[baseInput] + ' system. Which number system is the number, ' + num + ' in, that you want converted' + baseAmend, 
                     generateRepromptInputNumberVoicebackString(preBase, postBase)];
         }
         case ERROR_CODE.INPUT_INVALID_BASE_ORDER: {
@@ -795,6 +770,18 @@ const spellOut = function(base, num) {
     }
 }
 
+
+//
+//  Other helper functions
+//
+
+/*
+    Returns true if object is in array
+*/
+const isInArray = function(arr, obj) {
+    return arr.indexOf(obj) > -1;
+}
+
 //
 //  HANDLERS
 //
@@ -823,14 +810,33 @@ var handlers = {
         this.emit(':ask', speechOutput, speechOutput);
     },
 
-    // User provided number input only
+    // User provided number input only.
     'NumberInput': function() {
-        this.emit('StoreLastInputHelper', INPUT_CODE.NUMBER);
-        // Store input num as session attribute
-        try {
-            this.emit('StoreNumberInput', this.event.request.intent.slots.inputNum.value);
-        } catch (err) {
-            return;
+        // Use prompt history to check to see if user provided a base, or a number.
+        this.emit('InitializePromptTracker');
+        var lastPrompt = this.attributes['lastPrompt'];
+        var basePrompts = [PROMPT_CODE.PROMPT_PREBASE_HELPER, 
+                            PROMPT_CODE.PROMPT_POSTBASE_HELPER, 
+                            PROMPT_CODE.ERROR_PROMPT_BASE_INPUT_HELPER,
+                            // for invalid input (inputNum + preBase incompat), we prompt for a base.
+                            PROMPT_CODE.ERROR_PROMPT_INVALID_INPUT]; 
+        if (isInArray(basePrompts, lastPrompt[lastPrompt.length - 1])) {
+            // user provided a base
+            try {
+                this.emit('BaseInput', this.event.request.intent.slots.inputNum.value);
+                return;
+            } catch (err) {
+                return;
+            }
+        } else {
+            // user provided a number, not a base
+            this.emit('StoreLastInputHelper', INPUT_CODE.NUMBER);
+            // Store input num as session attribute
+            try {
+                this.emit('StoreNumberInput', this.event.request.intent.slots.inputNum.value);
+            } catch (err) {
+                return;
+            }
         }
 
         // validate inputs to see if anything's missing. calculate result if everything's there
@@ -838,12 +844,22 @@ var handlers = {
     },
 
     // User provided base input only (unspecified pre or post)
-    'BaseInput': function() {
+    'BaseInput': function(num) {
         this.emit('StoreLastInputHelper', INPUT_CODE.BASE);
+        // if user provided just a number input that's a base
+        var baseNum;
+        var baseSpoken;
+        if (num) {
+            baseNum = num;
+        } else {
+            baseNum = this.event.request.intent.slots.baseNum.value;
+            baseSpoken = this.event.request.intent.slots.BASE_SPOKEN.value;
+        }
+
         // store input as unclassified base session attribute
-        if (this.event.request.intent.slots.baseNum.value || this.event.request.intent.slots.BASE_SPOKEN.value) {
+        if (baseNum || baseSpoken) {
             try {
-                this.emit('BaseHandler', this.event.request.intent.slots.baseNum.value, this.event.request.intent.slots.BASE_SPOKEN.value, BASE_CODE.TEMP);
+                this.emit('BaseHandler', baseNum, baseSpoken, BASE_CODE.TEMP);
             } catch (err) {
                 return;
             }
@@ -1050,7 +1066,7 @@ var handlers = {
 
     'WelcomeHelper': function() {
         const speechOutput = staticVoicebackStrings.PROMPT_WELCOME;
-        const reprompt = staticVoicebackStrings.REPROMPT_WELCOME;
+        const reprompt = staticVoicebackStrings.REPROMPT_NUMBER;
         this.emit('StoreLastPromptHelper', PROMPT_CODE.WELCOME);
         this.emit(':ask', speechOutput, reprompt);
     },
@@ -1138,7 +1154,6 @@ var handlers = {
     'BaseHandler': function(baseIntValue, baseSpokenValue, baseType) {
         var baseInt;
         var baseSpoken;
-        console.log(baseIntValue + ' ' + baseSpokenValue);
         if (baseIntValue) {
             // user already provided numerical base. verify base input is valid
             try {
